@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --shadow-light: #ffffff;
+    --shadow-dark: #d1cdc7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    padding: 20px;
+    direction: rtl;
+}
+
+.neumorphic-card {
+    background: var(--background-color);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px var(--shadow-dark), 
+                -10px -10px 20px var(--shadow-light);
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.neumorphic-btn {
+    background: var(--background-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px var(--shadow-dark), 
+                -5px -5px 10px var(--shadow-light);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.neumorphic-btn:active {
+    box-shadow: inset 5px 5px 10px var(--shadow-dark), 
+                inset -5px -5px 10px var(--shadow-light);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: var(--background-color);
+    box-shadow: inset 5px 5px 10px var(--shadow-dark), 
+                inset -5px -5px 10px var(--shadow-light);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
